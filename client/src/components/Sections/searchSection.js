@@ -20,7 +20,7 @@ function SearchSection({ getSearchString }) {
       />
       <div className="self-center">
         <input
-          class="rounded-l-lg p-4 border-t mr-0 border-b border-l border-r w-56 h-10 text-gray-800 border-gray-200 bg-white"
+          class="rounded-lg p-4 border-t  mr-0 border-b border-l border-r w-80 h-10 text-gray-800 border-gray-200 bg-white"
           placeholder="Search your capsule"
           value={serachValue}
           onChange={(e) => searchValue(e)}
