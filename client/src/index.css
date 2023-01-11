@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body{
+    background-image: url("../images/spacex.jpg");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: top left;
+ 
+} */
+.searchSection{
+    margin-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 30px;
+    
+    padding-bottom: 5px;
+}
+.spacexText{
+    animation:changeColor 1s  linear infinite alternate ;
+}.negative{
+    margin-top: -5px;
+}.bannerSize{
+    height: 40%;
+    width: 50%;
+}.mainBanner{
+  background-color:  #fffff4;
+
+}
+@keyframes changeColor {
+    0% {
+      color: aquamarine;
+    }
+    50% {
+        color: rgb(194, 192, 192);
+    }
+    100% {
+      color: rgb(70, 70, 70);
+    }
+  }
