@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Constants } from "./constants/constants";
 import Filter from "./components/Sections/Filter";
 import FullPreview from './components/Sections/fullPreview';
+import Header from "./components/Sections/Header";
 
 
 
@@ -23,7 +24,8 @@ function App() {
 
     fetch(`${Constants.baseUrl}${Constants.allCapsulesEndpoint}`).
       then(res => res.json()).then(data => setCapsules(data));
-  }, []);
+  }
+  , []);
 
   // set selected filter string  
   const getfilterString = (filterString) => {
@@ -44,6 +46,7 @@ function App() {
   const renderContent = () => {
     return (
       <div>
+        <Header/>
         <BannerSection />
         <SearchSection getSearchString={getSearchString} />
         <Filter getFilterString={getfilterString} />
